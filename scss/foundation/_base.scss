@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    background-image: url("../img/tileable_wood_texture.png");
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color:#000;
+    }
+}
+.container{
+    width: 100%;
+}
+
+// @mixinの設定 //
+@mixin breakpoint( $point ){
+    @if $point == sma{
+        @media (max-width: 750px){
+            @content;
+    }
+}
+@if $point == pc {
+    @media (min-width: 751px){
+        @content;
+    }
+}
+}

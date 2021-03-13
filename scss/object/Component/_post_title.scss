@@ -1,0 +1,19 @@
+/**
+ * #.# Title
+ */
+ #home-slider .post-titles, .gallery-slider .post-titles {
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+  
+  #home-slider .post-titles a, .gallery-slider .post-titles a {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 10px;
+    padding: 10px 18px;
+    font-size: 24px;
+    color: #EEE;
+    background: rgba(0, 0, 0, 0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#99000000',GradientType=0 );
+    text-decoration: none; }
+    

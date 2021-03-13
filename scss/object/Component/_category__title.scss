@@ -1,0 +1,17 @@
+.c-category__title{
+    width: 33%;
+    letter-spacing: 10px;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+        font-size: 30px;
+        font-family: $main-font;
+    }
+    h1:after{
+        content:"";
+        display: block;
+        height: 4px;
+        background: -webkit-linear-gradient(to right, rgb(102, 102, 102), transparent);
+        background: linear-gradient(to right, rgb(102, 102, 102), transparent);
+    }
+}

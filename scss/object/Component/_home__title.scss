@@ -1,0 +1,23 @@
+.c-home__title{
+    width: 90%;
+    margin: 0 auto;
+    h2{
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: $main-font;
+    padding: 5px 0;
+    font-weight:bold;
+	color: transparent;
+	background: linear-gradient( 0deg, #F57C00 0% 60% , #FFB74D 60% 100%);
+	-webkit-background-clip: text;
+}
+h2:after{
+    content:"";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(102, 102, 102), transparent);
+    background: linear-gradient(to right, rgb(102, 102, 102), transparent);
+}
+}

@@ -1,0 +1,38 @@
+nav{
+    margin: 0 0 0 auto;
+    .p-header__menu{
+    height: 100%;
+    font-family: $main-font;
+    padding-right: 10px;
+    display: flex;
+    list-style: none;
+        li{
+            padding-left: 25px;
+        a{
+            color:$cork-color;
+            position: relative;
+            display: inline-block;
+        }
+        a::after{
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: .5s;
+        }
+        a:hover::after{
+            bottom: -4px;
+            opacity: 1;
+            visibility: visible;
+        }
+}
+@include breakpoint (sma){
+    display: none;
+}
+}
+}

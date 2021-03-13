@@ -1,0 +1,31 @@
+#post-main{
+    float: none;
+    width: 70%;
+    margin: 5% auto ;
+}
+.excerpt{
+    a{
+    color: inherit;
+}
+}
+.page #post-main{
+    width: 70%;
+    margin: 5% auto;
+}
+.entry-content{
+    color: $main-font-color;
+    border-color: $main-font-color;
+    text-align: center;
+    @include breakpoint(pc){
+        img{
+        width: 50%;
+        height: 50%;
+    }
+}
+    .smb-price-menu{
+        border-color: $main-font-color;
+    }
+    .smb-price-menu__item{
+        border-color: $main-font-color;
+    }
+}

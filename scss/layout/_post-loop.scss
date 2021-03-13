@@ -1,0 +1,17 @@
+#post-loop{
+    margin: 20px auto;
+    .container{
+        width: 100%;
+}
+    .post{
+        @include breakpoint (sma){
+            width: 50%;
+        }
+}
+.post-background{
+    width: 100%;
+    img{
+        height: auto;
+    }
+}
+}

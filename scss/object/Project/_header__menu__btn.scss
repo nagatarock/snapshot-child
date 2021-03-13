@@ -1,0 +1,61 @@
+//ハンバーガーボタン//
+.p-header__menu__btn{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 0 0 auto;
+    z-index: 12;
+    @include breakpoint (pc){
+        display: none;
+    }
+    span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        left: 6px;
+        background-color:$cork-color;
+        transition: 0.5s ease-in-out;
+    &:nth-child(1){
+        top:10px;
+    }
+    &:nth-child(2){
+        top:20px;
+    }
+    &:nth-child(3){
+        top:30px;
+    }
+}
+&.is-open{
+    span{
+    &:nth-child(1){
+        top:16px;
+        left:6px;
+        transform: rotate(315deg);
+    }
+    &:nth-child(2),
+    &:nth-child(3){
+        top:16px;
+        transform: rotate(-315deg);
+    }
+    }
+}
+
+}
+//背景を透過//
+.p-header__menu__background{
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    visibility: hidden; //ハンバーガーメニュー展開前は表示しない
+    transition: 0.5s ;
+    opacity: 0;
+    position: fixed;
+    z-index: 11;
+    &.is-open{
+        display: block;
+        opacity: 0.75;
+        visibility: visible;
+    }
+}

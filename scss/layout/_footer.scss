@@ -1,0 +1,25 @@
+#footer{
+    background-image: url("../img/cork-board.png");
+    width: 100%;
+    color: $cork-color;
+    .container{
+        width: 100%;
+        h2{
+            font-family:$main-font;
+            color:$cork-color;
+        }
+        .widget{
+            text-align: center;
+        }
+    }
+    .widget ul li a{
+        color: $cork-color;
+    }
+    .widget ul li a:hover{
+            color: gray;
+        }
+}
+#footer-copyright{
+    text-align: center;
+    color:$cork-color;
+}
