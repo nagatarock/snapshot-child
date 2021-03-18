@@ -35,6 +35,7 @@ body a {
 
 #footer .container .widget {
   text-align: center;
+  color: black;
 }
 
 #footer .widget ul li a {
@@ -106,17 +107,33 @@ body a {
   content: "";
   display: block;
   height: 4px;
-  background: -webkit-gradient(linear, left top, right top, from(#666666), to(transparent));
-  background: linear-gradient(to right, #666666, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(#F57C00), to(transparent));
+  background: linear-gradient(to right, #F57C00, transparent);
 }
 
 .c-home__content {
   width: 90%;
-  margin: 20px auto 20px 10%;
+  margin: 20px auto 20px 5%;
+}
+
+.c-home__content h2 {
+  font-size: 1.5rem;
+}
+
+.c-home__content h2 h3 {
+  font-size: 1.3rem;
+}
+
+.c-home__content h2 h4 {
+  font-size: 1.1rem;
+}
+
+.c-home__content li {
+  font-size: 1rem;
 }
 
 .c-home__content p {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .c-category__title {
@@ -178,16 +195,18 @@ body a {
 }
 
 #post-single-viewer img {
-  padding: 5%;
-  width: 80%;
-  height: 80%;
+  max-width: 100%;
+  height: auto;
+  padding: 5% 0;
 }
 
-@media (min-width: 751px) {
-  #post-single-viewer img {
-    width: 40%;
-    height: 40%;
-  }
+#c-home__slider {
+  padding-top: 80px;
+  max-width: 100%;
+}
+
+.flex-direction-nav .flex-next {
+  right: 0  !important;
 }
 
 .p-home__service {
@@ -459,14 +478,57 @@ nav .p-header__menu li a:hover::after {
 .entry-content {
   color: black;
   border-color: black;
-  text-align: center;
 }
 
-@media (min-width: 751px) {
-  .entry-content img {
-    width: 50%;
-    height: 50%;
-  }
+.entry-content h1 {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.entry-content h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.entry-content h3 {
+  font-size: 1.3rem;
+  color: black;
+}
+
+.entry-content h4 {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.entry-content h5 {
+  font-size: 1rem;
+  color: black;
+}
+
+.entry-content h6 {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.entry-content p {
+  font-size: 1rem;
+}
+
+.entry-content li {
+  font-size: 1rem;
+}
+
+.entry-content .is-style-sme-list-check li {
+  font-size: 1rem;
+  list-style: none;
+}
+
+.entry-content .is-style-sme-list-check li:before {
+  top: calc(.1rem);
+}
+
+.entry-content .is-style-sme-ordered-list-circle li:before, .entry-content .is-style-sme-ordered-list-square li:before {
+  top: calc(.1rem);
 }
 
 .entry-content .smb-price-menu {

@@ -15,13 +15,49 @@
 .entry-content{
     color: $main-font-color;
     border-color: $main-font-color;
-    text-align: center;
-    @include breakpoint(pc){
-        img{
-        width: 50%;
-        height: 50%;
+    h1{
+        font-size: 1.8rem;
+        color: $main-font-color;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: $main-font-color;
+    }
+    h3{
+        font-size: 1.3rem;
+        color: $main-font-color;
+    }
+    h4{
+        font-size: 1.1rem;
+        color: $main-font-color;
+    }
+    h5{
+        font-size: 1rem;
+        color: $main-font-color;
+    }
+    h6{
+        font-size: 0.9rem;
+        color: $main-font-color;
+    }
+    p{
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    .is-style-sme-list-check{
+    li{
+        font-size: 1rem;
+        list-style: none;
+    }
+    li:before{
+        top: calc(.1rem);
     }
 }
+.is-style-sme-ordered-list-circle li:before, .is-style-sme-ordered-list-square li:before {
+    top:calc(.1rem);
+}
+
     .smb-price-menu{
         border-color: $main-font-color;
     }

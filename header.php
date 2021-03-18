@@ -8,6 +8,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script><!-- jQueryをCDNから読み込み -->
 	<?php wp_head(); ?>
 </head>
@@ -34,7 +35,7 @@
 						<li><a href="<?php echo get_page_link('104'); ?>">ご注文の流れ</a></li>
 						<li><a href="<?php echo get_page_link('35'); ?>">料金表</a></li>
 						<li><a href="<?php echo get_page_link('61'); ?>">作品集</a></li>
-						<li><a href="<?php echo get_page_link('63'); ?>">ご注文・お問い合わせ</a></li>
+						<li><a href="<?php echo get_page_link('63'); ?>">お問い合わせ</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -45,7 +46,7 @@
 						<li><a href="<?php echo get_page_link('104'); ?>">ご注文の流れ</a></li>
 						<li><a href="<?php echo get_page_link('35'); ?>">料金表</a></li>
 						<li><a href="<?php echo get_page_link('61'); ?>">作品集</a></li>
-						<li><a href="<?php echo get_page_link('63'); ?>">ご注文・お問い合わせ</a></li>
+						<li><a href="<?php echo get_page_link('63'); ?>">お問い合わせ</a></li>
 		</ul>
 	</div><!-- top-area -->
 	<?php if (siteorigin_setting('general_search') && function_exists('snapshot_plus_search_bar')) snapshot_plus_search_bar(); ?>

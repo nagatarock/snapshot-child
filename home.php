@@ -1,5 +1,7 @@
 <?php get_header() ?>
+<div id="c-home__slider">
 <?php echo do_shortcode('[metaslider id="179"]'); ?>
+</div>
 <section class="p-home__service">
 	<div class="c-home__title">
 		<h2>
@@ -19,7 +21,8 @@
 </section>
 <section class="p-home__product">
 	<div class="c-home__title">
-		<h2>作品集</h2>
+		<h2>作品集</h2>	
+		<p><i class="far fa-lightbulb"></i> 画像タップで詳細ページにジャンプします</p>
 	</div>
 	<?php get_template_part('loop', 'index') ?>
 </section>
