@@ -1,0 +1,21 @@
+#post-loop{
+.post-background{
+ a:hover{
+     opacity: .2;
+     transition: all .5s;
+ }   
+}
+}
+.c-post__title{
+    padding-top: 5%;
+    padding-left: 10px;
+    h2{
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+.c-post__date{
+    color: white;
+    font-size: 1rem;
+    padding-left: 10px;
+}

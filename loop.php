@@ -4,34 +4,16 @@
 			<?php while(have_posts()): the_post(); ?>
 				<div <?php post_class('post') ?>>
 					<div class="post-background">
-						<?php if(has_post_thumbnail()) : the_post_thumbnail('post-thumbnail', array('class' => 'thumbnail')) ?>
+					<a href="<?php the_permalink() ?>"><?php if(has_post_thumbnail()) : the_post_thumbnail('post-thumbnail', array('class' => 'thumbnail')) ?></a>
 						<?php else : ?><img src="<?php echo get_template_directory_uri() ?>/images/defaults/no-thumbnail.jpg" width="310" height="420" class="thumbnail" />
 						<?php endif ?>
-						<a href="<?php the_permalink()?>">
-						<div class="post-content">
-							<?php do_action('before_post_summary') ?>
-							<h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-							<div class="excerpt">
-							<a href="<?php the_permalink()?>">
-								<?php the_excerpt() ?>
-								</a>
-							</div>
-							
-							<div class="date">
-								<em></em>
-								<a href="<?php the_permalink() ?>"><?php echo get_the_date() ?></a>
-							</div>
-							
-							<?php $comments = get_comment_count(get_the_ID()); ?>
-							<?php if(!empty($comments['approved'])) : ?>
-								<div class="comments">
-									<em></em>
-									<a href="<?php the_permalink() ?>#comments"><?php printf(__('%s Comments', 'snapshot'), $comments['approved']) ?></a>
-								</div>
-							<?php endif; ?>
-							<?php do_action('after_post_summary') ?>
+						<div class="c-post__title">
+						<h2><?php the_title() ?></h2>
 						</div>
-						</a>
+						<div class="c-post__date">
+								<em></em>
+								<?php echo get_the_date() ?>
+							</div>						
 						<div class="corner corner-se"></div>
 					</div>
 				</div>

@@ -14,6 +14,53 @@ body a {
   color: #000;
 }
 
+body h1 {
+  font-size: 1.8rem;
+  color: black;
+}
+
+body h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+body h3 {
+  font-size: 1.3rem;
+  color: black;
+}
+
+body h4 {
+  font-size: 1.1rem;
+  color: black;
+}
+
+body h5 {
+  font-size: 1rem;
+  color: black;
+}
+
+body h6 {
+  font-size: 0.9rem;
+  color: black;
+}
+
+body p {
+  font-size: 1rem;
+}
+
+body li {
+  font-size: 1rem;
+}
+
+body .is-style-sme-list-check li {
+  font-size: 1rem;
+  list-style: none;
+}
+
+body .is-style-sme-list-check li:before {
+  top: calc(.1rem);
+}
+
 .container {
   width: 100%;
 }
@@ -445,6 +492,28 @@ nav .p-header__menu li a:hover::after {
   .p-drop__menu {
     display: none;
   }
+}
+
+#post-loop .post-background a:hover {
+  opacity: .2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.c-post__title {
+  padding-top: 5%;
+  padding-left: 10px;
+}
+
+.c-post__title h2 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.c-post__date {
+  color: white;
+  font-size: 1rem;
+  padding-left: 10px;
 }
 
 #page-title {
