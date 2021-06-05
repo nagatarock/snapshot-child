@@ -1,67 +1,96 @@
-#post-main{
+#post-main {
     float: none;
-    width: 70%;
-    margin: 5% auto ;
-}
-.excerpt{
-    a{
-    color: inherit;
-}
-}
-.page #post-main{
-    width: 70%;
+    width: 70% !important;
     margin: 5% auto;
+    @include breakpoint(sma){
+        width: 100% !important;
+    }
 }
-.entry-content{
+.excerpt {
+    a {
+        color: inherit;
+    }
+}
+.entry-content {
     color: $main-font-color;
     border-color: $main-font-color;
-    h1{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 0;
+    @include breakpoint(sma){
+        padding: 0 5%;
+    }
+    h1 {
         font-size: 1.8rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    h2{
+    h2 {
         font-size: 1.5rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    h3{
+    h3 {
         font-size: 1.3rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    h4{
+    h4 {
         font-size: 1.1rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    h5{
+    h5 {
         font-size: 1rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    h6{
+    h6 {
         font-size: 0.9rem;
         color: $main-font-color;
+        font-weight: 400 !important;
     }
-    p{
+    a {
+        color: blue;
+    }
+    a:hover {
+        color: gray;
+    }
+    p {
         font-size: 1rem;
     }
-    li{
+    li {
         font-size: 1rem;
     }
-    .is-style-sme-list-check{
-    li{
-        font-size: 1rem;
-        list-style: none;
+    .is-style-sme-list-check {
+        li {
+            font-size: 1rem;
+            list-style: none;
+        }
+        li:before {
+            top: calc(0.1rem);
+        }
     }
-    li:before{
-        top: calc(.1rem);
+    table {
+        border: 1px solid black;
+        tbody{
+            border: 1px solid black;
+            tr{
+                border: 1px solid black;
+                td{
+                    border: 1px solid black;
+                }
+            }
+        }
     }
-}
-.is-style-sme-ordered-list-circle li:before, .is-style-sme-ordered-list-square li:before {
-    top:calc(.1rem);
-}
+    .is-style-sme-ordered-list-circle li:before,
+    .is-style-sme-ordered-list-square li:before {
+        top: calc(0.1rem);
+    }
 
-    .smb-price-menu{
+    .smb-price-menu {
         border-color: $main-font-color;
     }
-    .smb-price-menu__item{
+    .smb-price-menu__item {
         border-color: $main-font-color;
     }
 }

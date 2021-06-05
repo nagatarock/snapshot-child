@@ -3,7 +3,6 @@ nav{
     .p-header__menu{
     height: 100%;
     font-family: $main-font;
-    padding-right: 10px;
     display: flex;
     list-style: none;
         li{
@@ -30,6 +29,9 @@ nav{
             opacity: 1;
             visibility: visible;
         }
+}
+li:first-child{
+    display: none;
 }
 @include breakpoint (sma){
     display: none;

@@ -9,7 +9,7 @@
 <div id="post-<?php the_ID() ?>" <?php post_class() ?>>
 		<div id="post-main">
 			<div class="entry-content">
-				<?php the_content() ?>
+				<?php the_field('delivery');?>
 				
 				<?php global $numpages; if(empty($numpages)) : ?>
 					<div class="clear"></div>

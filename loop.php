@@ -18,12 +18,12 @@
 					</div>
 				</div>
 			<?php endwhile; ?>
+			</div>
 			<div class="clear"></div>
-			<div id="page-navigation">
+			<!-- <div id="page-navigation">
 				<?php if(function_exists('wp_pagenavi')) : wp_pagenavi(); ?>
 				<?php else : posts_nav_link(' ', __('Previous Page', 'snapshot'), __('Next Page', 'snapshot')); echo '<div class="clear"></div>'; endif;?>
-			</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 <?php else : ?>

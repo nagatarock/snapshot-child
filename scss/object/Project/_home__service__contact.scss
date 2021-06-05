@@ -1,0 +1,60 @@
+.c-contact__button {
+    width: 300px;
+    margin: 80px auto 0 auto;
+    background-color: #f57c00;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+    border-bottom: 5px solid #cc6600;
+    box-shadow: 1px 1px 2px;
+    position: relative;
+    @include breakpoint(sma){
+        width: 250px;
+    }
+    &:hover {
+        background-color: #f59331;
+        margin: 83px auto 0 auto;
+        border-bottom: 2px solid #cc6600;
+    }
+    a{
+        font-size: 24px;
+    }
+    a::before{
+        content: '';
+        width: 12px;
+        height: 12px;
+        border: 0px;
+        border-top: solid 2px #333;
+        border-right: solid 2px #333;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        margin-top: -8px;
+        @include breakpoint(sma){
+            display: none;
+        }
+    }
+    a::after{
+        content: '';
+        width: 12px;
+        height: 12px;
+        border: 0px;
+        border-top: solid 2px #333;
+        border-right: solid 2px #333;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 87%;
+        margin-top: -8px;
+        @include breakpoint(sma){
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.mw_wp_form {
+    line-height: 24px;
+    span {
+        color: red;
+    }
+    input {
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 1px solid;
+    }
+    select {
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid;
+    }
+    .contact__button{
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-bottom: 5px solid gray;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .25s;
+        &:hover{
+            margin-top: 13px;
+            border-bottom: 2px solid gray;
+        }
+    }
+}

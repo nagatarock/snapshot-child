@@ -1,9 +1,46 @@
-.p-home__service{
-    width: 100%;
+.p-home__service {
+    margin-top: 160px;
+    padding: 0 15%;
+    @include breakpoint(sma) {
+        padding: 0 5%;
+        margin-top: 80px;
     }
-.p-home__flow{
-    width: 100%;
+}
+.p-home__product {
+    margin-top: 160px;
+    @include breakpoint(sma) {
+        margin-top: 80px;
     }
-.p-home__contact{
-    width: 100%;
+}
+.p-home__flow {
+    margin-top: 160px;
+    padding: 0 15%;
+    @include breakpoint(sma) {
+        padding: 0 5%;
+        margin-top: 80px;
     }
+}
+.p-home__price {
+    margin-top: 160px;
+    padding: 0 15%;
+    @include breakpoint(sma) {
+        padding: 0 5%;
+        margin-top: 80px;
+    }
+}
+.p-home__contact {
+    margin-top: 160px;
+    padding: 0 15%;
+    @include breakpoint(sma) {
+        padding: 0 5%;
+        margin-top: 80px;
+    }
+    .c-home__contact {
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+        @include breakpoint(sma) {
+            margin: 0;
+        }
+    }
+}

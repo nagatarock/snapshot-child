@@ -4,22 +4,29 @@
     position: fixed;
     z-index: 12;
     transition: all .5s ;
+    background-image: url("../img/cork-board.png");
+    font-family: $main-font;
     &.is-open{
         height: 500px;
     }
 }
 #top-area #logo{
-    width: 30%;
     display: block;
     a{
         color: $cork-color;
+    }
+    h1{
+        padding: 0;
+        font-family: $main-font;
+        font-size: 30px;
     }
     h1 a:hover{
         color: gray;
     }
 }
 #top-area-wrapper{
-    width: 100%;
+    width: auto;
+    padding: 19px 5% ;
     display: flex;
     align-items: center;
 }

@@ -1,26 +1,52 @@
-.c-home__title{
-    width: 90%;
+.c-home__title {
     margin: 0 auto;
-    h2{
-    position: relative;
-    font-size: 40px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-family: $main-font;
-    padding: 5px 0;
-    font-weight:bold;
-	color: transparent;
-	background: linear-gradient( 0deg, #F57C00 0% 60% , #FFB74D 60% 100%);
-	-webkit-background-clip: text;
+    h2 {
+        position: relative;
+        letter-spacing: 10px;
+        text-align: center;
+        font-family: $main-font;
+        padding: 5px 0;
+        font-weight: bold;
+        color: transparent;
+        background: linear-gradient(0deg, #f57c00 0% 60%, #ffb74d 60% 100%);
+        -webkit-background-clip: text;
+        @include breakpoint(sma) {
+            font-size: 20px;
+        }
+        @media only screen and (min-width: 577px) {
+            font-size: 32px;
+        }
+        @media only screen and (min-width: 820px) {
+            font-size: 40px;
+        }
+    }
+    h2:after {
+        content: "";
+        display: block;
+        height: 4px;
+        background: -webkit-linear-gradient(to right, #f57c00, transparent);
+        background: linear-gradient(to right, #f57c00, transparent);
+    }
+    p {
+        font-size: 20px;
+    }
 }
-h2:after{
-    content:"";
-    display: block;
-    height: 4px;
-    background: -webkit-linear-gradient(to right, #F57C00, transparent);
-    background: linear-gradient(to right, #F57C00, transparent);
+.product {
+    margin: 0 auto 40px 0;
+    padding: 0 15%;
+    p {
+        font-size: 16px;
+    }
+    @include breakpoint(sma) {
+        padding: 0 5%;
+    }
 }
-p{
-    font-size: 20px;
+.flow {
+    margin: 0 auto 40px 0;
 }
+.price {
+    margin: 0 auto 40px 0;
+}
+.contact {
+    margin: 0 auto 40px 0;
 }
