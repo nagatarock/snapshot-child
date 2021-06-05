@@ -29,7 +29,7 @@
 			<br>納期やリクエストにも柔軟に対応いたしますのでお気軽にご相談ください。
 		</div>
 	</div>
-	<div class="p-home__delivery wow animate__animated animate__fadeIn">
+	<div class="c-home__delivery wow animate__animated animate__fadeIn">
 		<h3>現在納期は
 			<span>
 				<?php echo get_field('delivery', 308); ?>
@@ -46,7 +46,7 @@
 		<h2>作品集</h2>
 		<p><i class="far fa-lightbulb"></i> 画像タップで詳細ページにジャンプします</p>
 	</div>
-	<?php get_template_part('loop', 'index') ?>
+	<?php get_template_part('loop') ?>
 </section>
 <section class="p-home__flow wow animate__animated animate__fadeIn " data-wow-duration="2s">
 	<div class="c-home__title flow">
@@ -86,7 +86,7 @@
 			echo $page->post_title;
 			?></h2>
 	</div>
-	<div class="c-home__contact">
+	<div class="p-home__contact__form">
 		<?php $page_data = get_page_by_path('contact');
 		$page = get_post($page_data);
 		$content = $page->post_content;

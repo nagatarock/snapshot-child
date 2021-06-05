@@ -11,15 +11,17 @@
 
 // Component //
 @import "object/Component/home__title";
-@import "object/Component/home__content";
 @import "object/Component/category__title";
 @import "object/Component/post_title";
-@import "object/Component/page__title";
 @import "object/Component/post_single_viewer";
 @import "object/Component/home__slider";
+@import "object/Component/home__delivery";
+@import "object/Component/contact__button";
+@import "object/Component/page__title";
 // Project //
-@import "object/Project/home__service";
+@import "object/Project/home";
 @import "object/Project/top-area";
+@import "object/Project/home__content";
 @import "object/Project/header__menu__btn";
 @import "object/Project/header__menu";
 @import "object/Project/drop__menu";
@@ -28,7 +30,5 @@
 @import "object/Project/post-main";
 @import "object/Project/page-navigation";
 @import "object/Project/contact__form";
-@import "object/Project/home__delibery";
-@import "object/Project/home__service__contact";
-@import "object/Project/post-single-viewer";
+@import "object/Project/wp-pagenavi";
 // Utility //
