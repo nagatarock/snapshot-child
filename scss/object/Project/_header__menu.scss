@@ -36,5 +36,8 @@ li:first-child{
 @include breakpoint (sma){
     display: none;
 }
+@include breakpoint (tab){
+    display: none;
+}
 }
 }

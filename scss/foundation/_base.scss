@@ -51,17 +51,3 @@ body{
     }
 }
 }
-
-// @mixinの設定 //
-@mixin breakpoint( $point ){
-    @if $point == sma{
-        @media (max-width: 768px){
-            @content;
-    }
-}
-@if $point == pc {
-    @media (min-width: 769px){
-        @content;
-    }
-}
-}

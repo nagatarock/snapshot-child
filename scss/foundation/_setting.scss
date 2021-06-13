@@ -1,10 +1,29 @@
-$main-color:#FFFFEF;
-$main-font-color:black;
-$cork-color:#331907;
-$main-font:'snap-font',sans-serif;
+$main-color: #ffffef;
+$main-font-color: black;
+$cork-color: #331907;
+$main-font: "snap-font", sans-serif;
 
-@font-face{
-    font-family: 'snap-font';
-    src: url('../../../../../wp-includes/fonts/Ronde-B_square_snap2.woff')format('woff');
+@font-face {
+    font-family: "snap-font";
+    src: url("../../../../../wp-includes/fonts/Ronde-B_square_snap2.woff") format("woff");
 }
 // M PLUS Rounded 1c', sans-serif
+
+// @mixinの設定 //
+@mixin breakpoint($point) {
+    @if $point == sma {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $point == tab {
+        @media (max-width: 1024px) and(min-width: 769px) {
+            @content;
+        }
+    }
+    @if $point == pc {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+}
