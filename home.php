@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <div id="c-home__slider">
-	<?php echo do_shortcode('[metaslider id="179"]'); ?>
+	<!-- <?php echo do_shortcode('[metaslider id="179"]'); ?> -->
 </div>
 <section class="p-home__service ">
 	<div class="c-home__title wow animate__animated animate__fadeIn " data-wow-duration="2s">

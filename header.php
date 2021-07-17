@@ -4,6 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>絵描き屋ゆーき|岡山の似顔絵師のサイトです</title>
 	<?php wp_head(); ?>
 </head>
 

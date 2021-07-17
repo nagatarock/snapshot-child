@@ -60,4 +60,4 @@ add_filter('post_type_labels_post', 'aktk_post_type_labels_post');
 
 
 //管理バーの非表示
-  //add_filter('show_admin_bar', '__return_false');
+  add_filter('show_admin_bar', '__return_false');
