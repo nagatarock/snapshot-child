@@ -257,11 +257,11 @@ body .is-style-sme-list-check li:before {
 }
 
 .c-home__delivery {
-  width: 350px;
-  margin: 40px auto 40px auto;
+  width: 320px;
+  margin: 40px auto 0px auto;
   text-align: center;
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 2px solid #000;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 2px 2px 2px;
@@ -271,7 +271,7 @@ body .is-style-sme-list-check li:before {
 
 @media (max-width: 768px) {
   .c-home__delivery {
-    width: 300px;
+    width: 250px;
   }
 }
 
