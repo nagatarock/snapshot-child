@@ -257,7 +257,7 @@ body .is-style-sme-list-check li:before {
 }
 
 .c-home__delivery {
-  width: 50%;
+  width: 350px;
   margin: 40px auto 40px auto;
   text-align: center;
   position: relative;
@@ -267,6 +267,12 @@ body .is-style-sme-list-check li:before {
   -webkit-box-shadow: 2px 2px 2px;
           box-shadow: 2px 2px 2px;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .c-home__delivery {
+    width: 300px;
+  }
 }
 
 .c-home__delivery h3 {
