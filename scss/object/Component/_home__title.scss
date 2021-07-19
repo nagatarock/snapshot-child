@@ -11,7 +11,9 @@
         background: linear-gradient(0deg, #f57c00 0% 60%, #ffb74d 60% 100%);
         -webkit-background-clip: text;
         @include breakpoint(sma) {
-            font-size: 20px;
+            font-size: 28px;
+            letter-spacing: 0px;
+            border-bottom: solid 2px #f57c00;
         }
         @media only screen and (min-width: 577px) {
             font-size: 32px;
@@ -26,6 +28,9 @@
         height: 4px;
         background: -webkit-linear-gradient(to right, #f57c00, transparent);
         background: linear-gradient(to right, #f57c00, transparent);
+        @include breakpoint(sma) {
+            display: none;
+        }
     }
     p {
         font-size: 20px;

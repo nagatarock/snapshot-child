@@ -2,8 +2,11 @@
     background-color: $main-color;
     text-align: center;
     img{
-        max-width: 100%;
+        max-width: 30%;
         height: auto;
         padding: 5% 0;
+        @include breakpoint(sma){
+            max-width: 100%;
+        }
     }
 }

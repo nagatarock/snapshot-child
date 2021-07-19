@@ -1,7 +1,7 @@
 #post-main {
     float: none;
-    width: 70% !important;
     margin: 5% auto;
+    width: 50% !important;
     @include breakpoint(sma){
         width: 100% !important;
     }

@@ -126,7 +126,9 @@ body .is-style-sme-list-check li:before {
 
 @media (max-width: 768px) {
   .c-home__title h2 {
-    font-size: 20px;
+    font-size: 28px;
+    letter-spacing: 0px;
+    border-bottom: solid 2px #f57c00;
   }
 }
 
@@ -148,6 +150,12 @@ body .is-style-sme-list-check li:before {
   height: 4px;
   background: -webkit-gradient(linear, left top, right top, from(#f57c00), to(transparent));
   background: linear-gradient(to right, #f57c00, transparent);
+}
+
+@media (max-width: 768px) {
+  .c-home__title h2:after {
+    display: none;
+  }
 }
 
 .c-home__title p {
@@ -228,9 +236,15 @@ body .is-style-sme-list-check li:before {
 }
 
 #post-single-viewer img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
   padding: 5% 0;
+}
+
+@media (max-width: 768px) {
+  #post-single-viewer img {
+    max-width: 100%;
+  }
 }
 
 #c-home__slider {
@@ -302,6 +316,7 @@ body .is-style-sme-list-check li:before {
   -webkit-box-shadow: 1px 1px 2px;
           box-shadow: 1px 1px 2px;
   position: relative;
+  -webkit-appearance: none;
 }
 
 @media (max-width: 768px) {
@@ -999,8 +1014,8 @@ nav .p-header__menu li:first-child {
 
 #post-main {
   float: none;
-  width: 70% !important;
   margin: 5% auto;
+  width: 50% !important;
 }
 
 @media (max-width: 768px) {
